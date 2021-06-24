@@ -1,7 +1,5 @@
 # IVE---Final-Year-Project
 
-**Project Finish Date: May 2020**
-
 The layout of the webpage: <br>
 ![image](https://user-images.githubusercontent.com/86401891/123264777-f031b980-d52c-11eb-933b-0d6b8dd80b5d.png)
 
