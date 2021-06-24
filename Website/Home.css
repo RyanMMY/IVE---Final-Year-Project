@@ -1,0 +1,203 @@
+.div2{
+	background-image: url('https://studylish.com/wp-content/uploads/2019/07/UniLebenSlider2.jpg');
+	background-size: 1000px 500px;
+}
+
+#block_container {
+    display: flex;
+    justify-content: center;
+}
+
+.box3 {
+  border: 1px solid black; 
+  border-radius: 8px; 
+  margin: 20px; 
+  padding: 15px; 
+  width: 1000px;
+  height: 130px;
+  background-color: #333;
+  right: 0;
+}
+
+.box4 {
+  border: 1px solid black; 
+  border-radius: 8px; 
+  margin: 20px; 
+  padding: 15px; 
+  background-color: #333;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2C294A;
+}
+
+.bar {
+  overflow: hidden;
+  background-color: #CDCFE1;
+  bottom: 0;
+  width: 100%;
+  padding: 2px 0px;
+  margin: 5px 0px 0px 0px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #999DC2;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #999DC2;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bgimg-1 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("123.jpg");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.caption span.border {
+  background-color: #DDDDDD;
+  color: #2C294A;
+  padding: 18px;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+.box1 {
+  border: 1px solid black; 
+  border-radius: 8px; 
+  margin: 20px; 
+  padding: 15px; 
+  width: 500px;
+  height: 400px;
+  background-color: #333;
+}
+
+box1 div { 
+  clear: none;
+}
+
+.box2 {
+  border: 1px solid black; 
+  border-radius: 8px; 
+  margin: 20px; 
+  padding: 15px; 
+  width: 500px;
+  height: 400px;
+  background-color: #333;
+  right: 0;
+}
+
+box2 div { 
+  clear: none;
+}
+
+a {
+  color: white;
+  text-decoration: none; 
+}
+
+h2{
+  width: 100%;
+	text-align: center;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #00BAFF;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkgrey;
+}
+
+.btn.active {
+  background-color: darkgrey;
+  color: gray;
+}

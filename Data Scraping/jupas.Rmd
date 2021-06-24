@@ -1,0 +1,43 @@
+```{r}
+###jupas_v2
+library(rvest)
+library(plyr)
+
+hk_university <- read_html("https://www.jupas.edu.hk/tc/programme/ouhk/")
+
+a <- hk_university %>%
+html_nodes(".c-ft") %>% 
+html_text()
+
+a <- a[!a %in% "Programme Full Title"]
+
+b <- hk_university %>%
+html_nodes("td.c-no a") %>% 
+html_attr("href")
+
+urls <- paste0("https://www.jupas.edu.hk",b)
+
+a <- data.frame(id=c(1:34),urls=urls)
+
+dim(a)
+
+content <- c()
+
+for(i in a$urls){
+marketwatch_wbpg <- read_html(i)
+  c <- marketwatch_wbpg %>%
+  html_nodes(".linetext , .programInfo_block-duration .programInfo_block-text , .programInfo_block-level .programInfo_block-text , .program_title .before_label") %>%
+  html_text()
+  content = append(content, c)
+}
+
+t <- matrix(content, nrow = 34, ncol = 4, byrow = T)
+
+df <- as.data.frame(t) 
+
+df <- data.frame(a,df)
+
+df <- rename(df, c("A"="1", "V1"="Programme name", "V2"="First Year Tuition Fee", "V3"="Study Level", "V4"="Duration of Study"))
+
+write.csv(df, file="Jupas_csv.csv")
+```
