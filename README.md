@@ -5,3 +5,6 @@ The layout of the webpage: <br>
 
 The layout of the chatbot: <br>
 ![image](https://user-images.githubusercontent.com/86401891/123264631-cb3d4680-d52c-11eb-858d-6a7072ddae34.png)
+
+Visualization: <br>
+![image](https://user-images.githubusercontent.com/86401891/126936505-b7355e55-7e6c-46d4-9f25-9e43da6c0627.png)
